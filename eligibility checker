@@ -36,6 +36,12 @@ L2:
 
 	   _exit: 
 	    call readint
+	    Mov Eax,0h
+add Eax,10h
+Call DumpRegs
+Sub Eax, 10h
+Call DumpRegs
+Call ReadInt 
   
   ; Stoping Console from disappearning
   exit
